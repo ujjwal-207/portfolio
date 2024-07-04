@@ -1,10 +1,12 @@
+import Approach from "@/components/Approach";
 import Experience from "@/components/Experience";
+import Footer from "@/components/Footer";
 import Grid from "@/components/Grid";
 import RecentProjects from "@/components/RecentProjects";
 import Hero from "@/components/hero";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import { navItems } from "@/data/Index";
-import Image from "next/image";
+
 import { FaHome } from "react-icons/fa";
 
 export default function Home() {
@@ -18,6 +20,7 @@ export default function Home() {
         <Grid />
         <RecentProjects />
         <Experience/>
+        <Footer/>
       </div>
     </main>
      
