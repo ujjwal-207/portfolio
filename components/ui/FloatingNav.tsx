@@ -50,7 +50,7 @@ export const FloatingNav = ({
         }}
         animate={{
           y: visible ? 0 : -100,
-          opacity: visible ? 1 : 0,
+          opacity: visible ? 2 : 0,
         }}
         transition={{
           duration: 0.2,

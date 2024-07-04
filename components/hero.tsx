@@ -30,7 +30,7 @@ const Hero = () => {
       {image.map((info) => (
             <div
               key={info.id}
-               className="w-36 h-36  justify-start items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-3xl overflow-hidden ">
+               className="w-36 h-36  justify-start items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-full overflow-hidden border-2 border-gray-300 ">
               <img src={info.img} alt="icons" className='w-36 h-36 object-cover absolute ' />
               </div>
               ))}
