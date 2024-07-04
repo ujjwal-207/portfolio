@@ -4,6 +4,8 @@ import { TextGenerateEffect } from './ui/TextGenerateEffect'
 import MagicButton from './MagicButton'
 import { FaLocationArrow } from 'react-icons/fa'
 
+import { image } from '@/data/Index'
+
 
 const Hero = () => {
   return (
@@ -25,12 +27,16 @@ const Hero = () => {
     </div>
    <div className='flex justify-center relative my-20 z-10'>
       <div className='max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center'>
-          <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-            Dynamic Web Magic with Next.js
-          </h2>
+      {image.map((info) => (
+            <div
+              key={info.id}
+               className="w-36 h-36  justify-start items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-3xl overflow-hidden ">
+              <img src={info.img} alt="icons" className='w-36 h-36 object-cover absolute ' />
+              </div>
+              ))}
         <TextGenerateEffect
         className="text-center text-[40px] md:text-5xl lg:text-6xl"
-        words="Transforming Concepts into Seamless Experiences"
+        words="Transforming Ideas into Seamless Reality"
          />
          <p className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl'>
           Hi I&apos;m Ujjwal Nepal, a fullStack Developer based in Nepal Kathmandu.

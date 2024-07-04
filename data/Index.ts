@@ -48,16 +48,6 @@ export const navItems = [
     },
   
     {
-      id: 5,
-      title: "Currently building a JS Animation library",
-      description: "The Inside Scoop",
-      className: "md:col-span-3 md:row-span-2",
-      imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
-      titleClassName: "justify-center md:justify-start lg:justify-center",
-      img: "/b5.svg",
-      spareImg: "/grid.svg",
-    },
-    {
       id: 6,
       title: "Do you want to start a project together?",
       description: "",
@@ -213,5 +203,11 @@ export const navItems = [
     {
       id: 3,
       img: "/link.svg",
+    },
+  ];
+  export const image =[
+    {
+      id:1,
+      img:"/ujjwal.png",
     },
   ];
