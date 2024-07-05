@@ -7,7 +7,7 @@ import Hero from "@/components/hero";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import { navItems } from "@/data/Index";
 
-import { FaHome } from "react-icons/fa";
+
 
 export default function Home() {
   return (
