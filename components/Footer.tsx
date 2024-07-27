@@ -2,13 +2,15 @@ import { FaLocationArrow } from "react-icons/fa6";
 
 import { socialMedia } from "@/data/Index";
 import MagicButton from "./MagicButton";
+import Image from "next/image";
 
 const Footer = () => {
   return (
     <footer className="w-full pb-10 mb-[100px] md:mb-5" id="contact">
       {/* background grid */}
       <div className="w-full absolute left-0 -bottom-72 min-h-96">
-        <img
+        <Image
+          fill
           src="/footer-grid.svg"
           alt="grid"
           className="w-full h-full opacity-50 "
@@ -17,8 +19,8 @@ const Footer = () => {
 
       <div className="flex flex-col items-center">
         <h1 className="heading lg:max-w-[45vw]">
-          Ready to take <span className="text-purple">your</span> ideas
-          to the next level?
+          Ready to take <span className="text-purple">your</span> ideas to the
+          next level?
         </h1>
         <p className="text-white-200 md:mt-10 my-5 text-center">
           Reach out to me today and let&apos;s discuss for collaboration.
@@ -42,7 +44,7 @@ const Footer = () => {
               key={info.id}
               className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
             >
-              <img src={info.img} alt="icons" width={20} height={20} />
+              <Image src={info.img} alt="icons" width={20} height={20} />
             </div>
           ))}
         </div>
